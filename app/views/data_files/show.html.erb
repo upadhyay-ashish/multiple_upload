@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <th>
+      Title:
+    </th>
+    <td>
+      <%=h @data_file.title %>
+    </td>
+  </tr>
+   <tr>
+    <th>
+      Description:
+    </th>
+    <td>
+      <%=h @data_file.description %>
+    </td>
+  </tr>
+   <tr>
+    <th>
+      Banner:
+    </th>
+    <td>
+      <%= image_tag("banners/small/#{@data_file.title}.jpg",:width=>300,:height=>300)  %>
+    </td>
+  </tr>
+ 
+</table>
+<%= link_to 'Edit', edit_data_file_path(@data_file) %> |
+<%= link_to 'Back', data_files_path %>

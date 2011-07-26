@@ -1,0 +1,49 @@
+<h1>Banner Upload</h1>
+<table>
+  <% form_tag({:action => 'uploadFile'},:multipart => true) do %>
+    <% form_for(@data_file) do |f| %>
+      <%= f.error_messages %>
+      <tr>
+        <th>
+          <%= f.label :title %>
+        </th>
+        <td>
+          <%= f.text_field :title %>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <%= f.label :description %>
+        </th>
+        <td>
+          <%= f.text_area :description %>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="upload_file">Small Banner</label>
+        </th>
+        <td>
+          <%= file_field 'small_banner', 'datafile' %>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="upload_file">Large Banner</label>
+        </th>
+        <td>
+          <%= file_field 'large_banner', 'datafile' %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td >
+          <%= submit_tag "Upload" %>
+        </td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
+
+<%= link_to 'Back', data_files_path %>

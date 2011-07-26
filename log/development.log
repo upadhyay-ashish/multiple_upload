@@ -1,0 +1,2512 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 19:57:19) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 108ms (View: 90, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 19:57:20) [GET]
+  [4;36;1mDataFile Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 39ms (View: 16, DB: 14) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 19:57:26) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.0>}, "data_file"=>{"title"=>"sadsad", "description"=>"asdasdasd"}}
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"sadsad"
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (1.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:27:26', 'sadsad', 'asdasdasd', '2011-07-21 14:27:26')[0m
+  [4;36;1mSQL (26.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/31
+Completed in 70ms (DB: 39) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 19:57:27) [GET]
+  Parameters: {"id"=>"31"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 31) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 29ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/31]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 19:57:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/sadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 19:58:49) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.2>}, "data_file"=>{"title"=>"sadsad", "description"=>"asdasdasd"}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (0.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:28:49', 'sadsad', 'asdasdasd', '2011-07-21 14:28:49')[0m
+  [4;36;1mSQL (56.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/32
+Completed in 153ms (DB: 64) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 19:58:50) [GET]
+  Parameters: {"id"=>"32"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 32) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 27ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/32]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 19:58:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/sadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 19:59:23) [GET]
+  Parameters: {"id"=>"32"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (7.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 32) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 30ms (View: 4, DB: 16) | 200 OK [http://localhost/data_files/32]
+  [4;35;1mSQL (4.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 19:59:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/sadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 19:59:25) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 49ms (View: 32, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 19:59:26) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 11, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 19:59:32) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.0>}, "data_file"=>{"title"=>"hello", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (17.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:29:32', 'hello', '', '2011-07-21 14:29:32')[0m
+  [4;35;1mSQL (71.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/33
+Completed in 127ms (DB: 99) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 19:59:32) [GET]
+  Parameters: {"id"=>"33"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 33) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 27ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/33]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 19:59:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/hello.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:02:16) [GET]
+  Parameters: {"id"=>"33"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (4.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 33) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 12) | 200 OK [http://localhost/data_files/33]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:02:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/hello.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:02:17) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 119ms (View: 36, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:02:19) [GET]
+  [4;36;1mDataFile Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 31ms (View: 14, DB: 7) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:02:27) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.2>}, "data_file"=>{"title"=>"ashish_sample", "description"=>""}}
+
+NoMethodError (undefined method `document_file_name' for #<HashWithIndifferentAccess:0x666bbe0>):
+  app/models/data_file.rb:5:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:03:13) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.4>}, "data_file"=>{"title"=>"ashish_sample", "description"=>""}}
+
+NoMethodError (undefined method `document_file_name' for "Tulips.jpg":String):
+  app/models/data_file.rb:6:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:10:47) [GET]
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 74ms (View: 11, DB: 9) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:10:52) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.0>}, "data_file"=>{"title"=>"sadsad", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:40:52', 'sadsad', '', '2011-07-21 14:40:52')[0m
+  [4;35;1mSQL (42.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/34
+Completed in 80ms (DB: 54) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:10:53) [GET]
+  Parameters: {"id"=>"34"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 34) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/34]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:10:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/sadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:12:19) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 53ms (View: 35, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:12:20) [GET]
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 30ms (View: 11, DB: 9) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:12:26) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.3>}, "data_file"=>{"title"=>"asdsadsadasd", "description"=>""}}
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (0.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:42:26', 'asdsadsadasd', '', '2011-07-21 14:42:26')[0m
+  [4;36;1mSQL (52.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/35
+Completed in 90ms (DB: 65) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:12:26) [GET]
+  Parameters: {"id"=>"35"}
+  [4;35;1mDataFile Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 35) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 30ms (View: 5, DB: 15) | 200 OK [http://localhost/data_files/35]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:12:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdsadsadasd.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:13:31) [GET]
+  Parameters: {"id"=>"35"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 35) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/35]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdsadsadasd.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:13:35) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.1>}, "data_file"=>{"title"=>"asdsadsadasd", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (0.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:43:35', 'asdsadsadasd', '', '2011-07-21 14:43:35')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/36
+Completed in 85ms (DB: 59) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:13:35) [GET]
+  Parameters: {"id"=>"36"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 36) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/36]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:13:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdsadsadasd.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:14:43) [GET]
+  Parameters: {"id"=>"36"}
+  [4;35;1mDataFile Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 36) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 109ms (View: 6, DB: 14) | 200 OK [http://localhost/data_files/36]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:14:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdsadsadasd.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:14:45) [GET]
+  Parameters: {"id"=>"36"}
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (4.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 36) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 29ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/36]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:14:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdsadsadasd.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:14:47) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 58ms (View: 41, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:14:48) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:14:53) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.0>}, "data_file"=>{"title"=>"asdsadsadsadsad", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:44:53', 'asdsadsadsadsad', '', '2011-07-21 14:44:53')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/37
+Completed in 92ms (DB: 62) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:14:53) [GET]
+  Parameters: {"id"=>"37"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 37) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/37]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:14:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdsadsadsadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:16:49) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 59ms (View: 41, DB: 11) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:16:50) [GET]
+  [4;36;1mDataFile Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 11, DB: 7) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:16:57) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.2656.0>}, "data_file"=>{"title"=>"sdfsdf", "description"=>""}}
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (0.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:47:29', 'sdfsdf', '', '2011-07-21 14:47:29')[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/38
+Completed in 32012ms (DB: 51) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:18:14) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 79ms (View: 60, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:18:15) [GET]
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 36ms (View: 17, DB: 9) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:18:24) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.0>}, "data_file"=>{"title"=>"aaaaaaaaaaaaaaaaaa", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (0.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:48:24', 'aaaaaaaaaaaaaaaaaa', '', '2011-07-21 14:48:24')[0m
+  [4;36;1mSQL (73.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/39
+Completed in 113ms (DB: 85) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:18:24) [GET]
+  Parameters: {"id"=>"39"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 39) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 78ms (View: 9, DB: 14) | 200 OK [http://localhost/data_files/39]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:18:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/aaaaaaaaaaaaaaaaaa.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:19:47) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 68ms (View: 50, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:19:48) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 30ms (View: 13, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:19:55) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.2>}, "data_file"=>{"title"=>"poowwww", "description"=>""}}
+  [4;36;1mSQL (123.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+
+NameError (undefined local variable or method `small_banner_name' for #<Class:0x65eea38>):
+  app/models/data_file.rb:13:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:20:07) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.0>}, "data_file"=>{"title"=>"poowwww", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:50:07', 'poowwww', '', '2011-07-21 14:50:07')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/40
+Completed in 154ms (DB: 74) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:20:08) [GET]
+  Parameters: {"id"=>"40"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (4.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 40) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 29ms (View: 4, DB: 12) | 200 OK [http://localhost/data_files/40]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:20:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/poowwww.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:22:07) [GET]
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 74ms (View: 54, DB: 11) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:22:09) [GET]
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 31ms (View: 11, DB: 11) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:22:18) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.2>}, "data_file"=>{"title"=>"test", "description"=>""}}
+  [4;35;1mDataFile Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (1.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:52:18', 'test', '', '2011-07-21 14:52:18')[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/41
+Completed in 148ms (DB: 64) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:22:19) [GET]
+  Parameters: {"id"=>"41"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 41) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/41]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:22:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/test.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:22:40) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 76ms (View: 58, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:22:42) [GET]
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 34ms (View: 15, DB: 9) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:22:49) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.0>}, "data_file"=>{"title"=>"quest", "description"=>""}}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:52:49', 'quest', '', '2011-07-21 14:52:49')[0m
+  [4;35;1mSQL (42.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/42
+Completed in 84ms (DB: 55) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:22:49) [GET]
+  Parameters: {"id"=>"42"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 42) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/42]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:22:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/quest.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:23:03) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 87ms (View: 69, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:23:04) [GET]
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 41ms (View: 14, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:23:14) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.2>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.3>}, "data_file"=>{"title"=>"EMC", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (0.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:53:14', 'EMC', '', '2011-07-21 14:53:14')[0m
+  [4;36;1mSQL (342.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/43
+Completed in 450ms (DB: 354) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:23:15) [GET]
+  Parameters: {"id"=>"43"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 43) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/43]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:23:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/EMC.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:24:27) [GET]
+  Parameters: {"id"=>"43"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 43) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 105ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/43]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:24:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/EMC.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:24:28) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 72ms (View: 55, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:24:29) [GET]
+  [4;35;1mDataFile Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 28ms (View: 11, DB: 7) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:24:42) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.1>}, "data_file"=>{"title"=>"Power", "description"=>""}}
+  [4;36;1mDataFile Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 14:54:42', 'Power', '', '2011-07-21 14:54:42')[0m
+  [4;35;1mSQL (178.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/44
+Completed in 285ms (DB: 191) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:24:42) [GET]
+  Parameters: {"id"=>"44"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 44) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 27ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/44]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:24:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/Power.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:38) [GET]
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 79ms (View: 59, DB: 11) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:40) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"23"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (6.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 23) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (0.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 23[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 88ms (DB: 77) | 302 Found [http://localhost/data_files/23]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:41) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 129ms (View: 112, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:25:41) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 23) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find DataFile with ID=23):
+  app/controllers/data_files_controller.rb:16:in `show'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:45) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"24"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 24) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (0.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 24[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 70ms (DB: 54) | 302 Found [http://localhost/data_files/24]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:45) [GET]
+  [4;36;1mDataFile Load (25.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 94ms (View: 52, DB: 34) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:46) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"25"}
+  [4;36;1mDataFile Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (2.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 25) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (1.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 25[0m
+  [4;36;1mSQL (202.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 230ms (DB: 217) | 302 Found [http://localhost/data_files/25]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:46) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 72ms (View: 53, DB: 10) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:47) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"26"}
+  [4;35;1mDataFile Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 26) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (1.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 26[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 65ms (DB: 53) | 302 Found [http://localhost/data_files/26]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:47) [GET]
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 124ms (View: 104, DB: 12) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:48) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"27"}
+  [4;36;1mDataFile Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 27) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (0.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 27[0m
+  [4;36;1mSQL (173.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 200ms (DB: 187) | 302 Found [http://localhost/data_files/27]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:48) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 70ms (View: 50, DB: 11) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:50) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"28"}
+  [4;35;1mDataFile Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (4.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 28) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (0.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 28[0m
+  [4;35;1mSQL (66.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 95ms (DB: 84) | 302 Found [http://localhost/data_files/28]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:50) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 61ms (View: 43, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:51) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"29"}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (6.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 29) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (0.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 29[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 92ms (DB: 80) | 302 Found [http://localhost/data_files/29]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:51) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 58ms (View: 41, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:52) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"30"}
+  [4;35;1mDataFile Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (3.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 30) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (0.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 30[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 75ms (DB: 62) | 302 Found [http://localhost/data_files/30]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:52) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 54ms (View: 37, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:53) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"31"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (6.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 31) [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (1.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 31[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 68ms (DB: 57) | 302 Found [http://localhost/data_files/31]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:53) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 119ms (View: 39, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:55) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"32"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 32) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (1.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 32[0m
+  [4;35;1mSQL (36.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 61ms (DB: 51) | 302 Found [http://localhost/data_files/32]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:55) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 53ms (View: 35, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:56) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"33"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 33) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (1.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 33[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 116ms (DB: 106) | 302 Found [http://localhost/data_files/33]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:56) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 53ms (View: 35, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:58) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"34"}
+  [4;35;1mDataFile Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 34) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (1.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 34[0m
+  [4;35;1mSQL (65.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 100ms (DB: 80) | 302 Found [http://localhost/data_files/34]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:58) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 45ms (View: 28, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:25:59) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"35"}
+  [4;36;1mDataFile Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (2.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 35) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (0.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 35[0m
+  [4;36;1mSQL (52.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 77ms (DB: 67) | 302 Found [http://localhost/data_files/35]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:25:59) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 45ms (View: 26, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:37) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"36"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (8.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 36) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (1.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 36[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 92ms (DB: 81) | 302 Found [http://localhost/data_files/36]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:37) [GET]
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 98ms (View: 81, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:38) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"37"}
+  [4;36;1mDataFile Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 37) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (0.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 37[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 89ms (DB: 77) | 302 Found [http://localhost/data_files/37]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:38) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 43ms (View: 23, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:39) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"38"}
+  [4;35;1mDataFile Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 38) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (0.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 38[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 69ms (DB: 56) | 302 Found [http://localhost/data_files/38]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:39) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 37ms (View: 19, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:41) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"39"}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 39) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (1.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 39[0m
+  [4;36;1mSQL (44.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 70ms (DB: 59) | 302 Found [http://localhost/data_files/39]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:41) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 35ms (View: 18, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:42) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"40"}
+  [4;35;1mDataFile Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 40) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (1.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 40[0m
+  [4;35;1mSQL (93.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 120ms (DB: 108) | 302 Found [http://localhost/data_files/40]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:43) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 33ms (View: 15, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:43) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"41"}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 41) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (1.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 41[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 77ms (DB: 67) | 302 Found [http://localhost/data_files/41]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:43) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 30ms (View: 13, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:44) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"42"}
+  [4;35;1mDataFile Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 42) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (1.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 42[0m
+  [4;35;1mSQL (34.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 62ms (DB: 49) | 302 Found [http://localhost/data_files/42]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:45) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 27ms (View: 10, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:45) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"43"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (7.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 43) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Destroy (1.0ms)[0m   [0mDELETE FROM `data_files` WHERE `id` = 43[0m
+  [4;36;1mSQL (69.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 97ms (DB: 86) | 302 Found [http://localhost/data_files/43]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:46) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 78ms (View: 60, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#destroy (for 127.0.0.1 at 2011-07-21 20:26:47) [DELETE]
+  Parameters: {"authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "id"=>"44"}
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (4.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 44) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Destroy (117.0ms)[0m   [0;1mDELETE FROM `data_files` WHERE `id` = 44[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files
+Completed in 180ms (DB: 170) | 302 Found [http://localhost/data_files/44]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:47) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:35:12) [GET]
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 78ms (View: 15, DB: 10) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:37:21) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 15:07:21', '', '', '2011-07-21 15:07:21')[0m
+  [4;35;1mSQL (74.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/45
+Completed in 142ms (DB: 87) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:37:22) [GET]
+  Parameters: {"id"=>"45"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 45) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/45]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:37:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:40:11) [GET]
+  Parameters: {"id"=>"45"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (4.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 45) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 61ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/45]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:40:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:40:14) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.3>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 54ms (View: 14, DB: 12) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:40:46) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:42:03) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 25ms (View: 7, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:42:10) [GET]
+  Parameters: {"id"=>"45"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 45) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/45]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:42:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:42:12) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 26ms (View: 8, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:15:42) [GET]
+  [4;35;1mDataFile Columns (287.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 4482ms (View: 2728, DB: 287) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-22 12:19:16) [GET]
+  [4;36;1mDataFile Load (71.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (72.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 184ms (View: 32, DB: 144) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:19:18) [GET]
+  [4;36;1mDataFile Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 75ms (View: 52, DB: 13) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:19:27) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert Array into String):
+  app/models/data_file.rb:7:in `+'
+  app/models/data_file.rb:7:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:19:49) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.2>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+NoMethodError (private method `split' called for 76:Fixnum):
+  app/models/data_file.rb:6:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:20:16) [GET]
+  [4;35;1mDataFile Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 75ms (View: 13, DB: 14) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:20:20) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.4>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert nil into String):
+  app/models/data_file.rb:8:in `+'
+  app/models/data_file.rb:8:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:20:38) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert nil into String):
+  app/models/data_file.rb:8:in `+'
+  app/models/data_file.rb:8:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:21:24) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.2>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert Array into String):
+  app/models/data_file.rb:8:in `+'
+  app/models/data_file.rb:8:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:22:00) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.1>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 170ms (View: 14, DB: 14) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:24:05) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.5>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 120ms (View: 18, DB: 13) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:24:56) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 54ms (View: 12, DB: 12) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:24:59) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.3>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;35;1mDataFile Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 167ms (View: 12, DB: 14) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:26:40) [GET]
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:26:42) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:26:46) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.1>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 92ms (View: 13, DB: 15) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:27:38) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.5>}, "data_file"=>{"title"=>"sadsad", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (91.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-22 06:57:38', 'sadsad', '', '2011-07-22 06:57:38')[0m
+  [4;36;1mSQL (138.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/46
+Completed in 309ms (DB: 241) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-22 12:27:39) [GET]
+  Parameters: {"id"=>"46"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (15.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 46) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 63ms (View: 29, DB: 23) | 200 OK [http://localhost/data_files/46]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-22 12:27:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/sadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-22 12:28:13) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 27ms (View: 11, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:28:14) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 30ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:28:18) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 50ms (View: 13, DB: 11) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:28:37) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 44064ms (View: 41, DB: 1) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:29:22) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.4>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 120ms (View: 12, DB: 11) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:30:30) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 49ms (View: 13, DB: 13) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:31:25) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.2>}, "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/data_files/uploadFile]
+/!\ FAILSAFE /!\  Tue Jul 26 14:21:59 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:06 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:21 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:24 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:29 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:42 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:46 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (68.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (253.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDataFiles (20110721074049)
+  [4;36;1mSQL (67.0ms)[0m   [0;1mCREATE TABLE `data_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (22.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110721074049')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `data_files`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `data_files`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-26 14:38:10) [GET]
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+Completed in 82ms (View: 72, DB: 1) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-26 14:38:12) [GET]
+  [4;35;1mDataFile Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 5548ms (View: 5528, DB: 11) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 14:38:36) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1i8hvyx-0>}, "data_file"=>{"title"=>"None", "description"=>"Not Much"}}
+  [4;36;1mDataFile Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`created_at`, `title`, `updated_at`, `description`) VALUES('2011-07-26 09:08:36', 'None', '2011-07-26 09:08:36', 'Not Much')[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/1
+Completed in 116ms (DB: 57) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-26 14:38:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 1) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 29ms (View: 10, DB: 12) | 200 OK [http://localhost/data_files/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-26 14:38:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/None.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-26 14:38:46) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 32ms (View: 10, DB: 12) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-26 14:59:04) [GET]
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 117ms (View: 83, DB: 12) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (8.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:37:38) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-17qeoy0-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (18.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:37:49) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-pzx7m6-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1m2pm4c-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:07) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1wz2e3t-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1uzb0o4-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:24) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1pcf9s-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1ojjcl6-0>}, "data_file"=>{"title"=>"as", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-26 17:38:28) [GET]
+  [4;35;1mDataFile Columns (285.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 449ms (View: 78, DB: 286) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:34) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"yKJEHxZkPB6fkWGSj9ePWygTArkiWYO93I2mORTni0c=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-8ozf49-0>}, "data_file"=>{"title"=>"asdasdsad", "description"=>""}}
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (263.0ms)[0m   [0;1mINSERT INTO `data_files` (`created_at`, `title`, `updated_at`, `description`) VALUES('2011-07-26 12:08:34', 'asdasdsad', '2011-07-26 12:08:34', '')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/2
+Completed in 504ms (DB: 386) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-26 17:38:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDataFile Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (74.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 2) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 97ms (View: 5, DB: 84) | 200 OK [http://localhost/data_files/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-26 17:38:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdasdsad.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:40) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"yKJEHxZkPB6fkWGSj9ePWygTArkiWYO93I2mORTni0c=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1ix0yr7-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1gaosqu-0>}, "data_file"=>{"title"=>"asdasdsad", "description"=>""}}
+  [4;36;1mDataFile Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (1.0ms)[0m   [0;1mINSERT INTO `data_files` (`created_at`, `title`, `updated_at`, `description`) VALUES('2011-07-26 12:08:40', 'asdasdsad', '2011-07-26 12:08:40', '')[0m
+  [4;35;1mSQL (28.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/3
+Completed in 101ms (DB: 41) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-26 17:38:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mDataFile Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (7.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 3) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 51ms (View: 4, DB: 38) | 200 OK [http://localhost/data_files/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-26 17:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdasdsad.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:45) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"yKJEHxZkPB6fkWGSj9ePWygTArkiWYO93I2mORTni0c=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-6qfduk-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1abauss-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://localhost/data_files/uploadFile]
